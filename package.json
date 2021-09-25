@@ -1,0 +1,55 @@
+{
+  "name": "react-img-contrast",
+  "version": "1.0.0",
+  "description": "根据图片平均色值生成文本最佳展示颜色",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "repository": "https://github.com/chanceyliu/react-img-contrast.git",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "scripts": {
+    "build:es": "tsc --outDir es --module esnext --target es5",
+    "build:lib": "tsc --outDir lib --module commonjs --target es5",
+    "build": "npm run build:es && npm run build:lib",
+    "test": "mocha ./src/test/**/**.test.ts --require ts-node/register"
+  },
+  "keywords": [
+    "react",
+    "contrast"
+  ],
+  "author": "chanceyliu <1445885764@qq.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/react": "^17.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "chai": "^4.3.4",
+    "conventional-changelog-cli": "^2.1.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.26.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.2",
+    "mocha": "^9.1.1",
+    "react": "^17.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0 || ^17.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
+}
