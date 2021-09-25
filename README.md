@@ -6,7 +6,7 @@ $ npm install react-img-contrast
 
 ## 用法
 
-```react
+```typescript
 import { useImgContrast } from "react-img-contrast";
 import defaultBackground from "@/assets/default-background.png";
 
@@ -31,7 +31,7 @@ export default () => {
       <div style={{ color: imgContrast }}>版权版权信息</div>
     </div>
   );
-}
+};
 ```
 
 除了 hooks 的用法，还提供了 `getImgContrast` 方法供直接使用，异步返回文字颜色
@@ -70,10 +70,10 @@ const handler = async() => {
 
 - **`hexColor`**：16 进制的颜色，如 `#ffffff`
 
-```react
+```typescript
 import { useColorContrast } from "react-img-contrast";
 
-const backgroundColor = '#ffffff'
+const backgroundColor = "#ffffff";
 export default () => {
   const { colorContrast } = useColorContrast(backgroundColor);
 
@@ -82,13 +82,13 @@ export default () => {
       style={{
         width: "100vw",
         height: "100vh",
-        backgroundColor: backgroundColor
+        backgroundColor: backgroundColor,
       }}
     >
       <div style={{ color: colorContrast }}>版权版权信息</div>
     </div>
   );
-}
+};
 ```
 
 **hexToRgb** 将 16 进制的色值转换为 RGB 值
