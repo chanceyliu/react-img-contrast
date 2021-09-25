@@ -36,18 +36,18 @@ export default () => {
 
 除了 hooks 的用法，还提供了 `getImgContrast` 方法供直接使用，异步返回文字颜色
 
-```react
+```typescript
 import { getImgContrast } from "react-img-contrast";
 
-const handler = async() => {
+const handler = async () => {
   const res = await getImgContrast({
     imgSrc: defaultBackground,
     xMultiple: 0.3,
     yMultiple: 0.8,
     wMultiple: 0.4,
     hMultiple: 0.2,
-  })
-}
+  });
+};
 ```
 
 ## 其他方法&参数说明
