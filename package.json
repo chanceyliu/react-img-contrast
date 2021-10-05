@@ -51,5 +51,8 @@
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix"
     ]
+  },
+  "dependencies": {
+    "quantize": "^1.0.2"
   }
 }

@@ -1,3 +1,4 @@
-export { useColorContrast, useImgContrast } from './hooks'
-export { getContrastYIQ, createImage, getImgContrast, hexToRgb } from './utils'
+export { createImage, hexToRgb, rgbToHex } from './utils'
+export { getColor, getPalette } from './img-theme'
+export { getTextColor } from './img-contrast'
 export { hexReg } from './pattern'
