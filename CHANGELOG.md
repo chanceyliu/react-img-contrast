@@ -1,3 +1,12 @@
+# [2.1.0](https://github.com/chanceyliu/react-img-contrast/compare/v2.0.0...v2.1.0) (2021-10-06)
+
+
+### Features
+
+* 新增根据十六进制颜色获取文字最佳展示颜色 ([2295153](https://github.com/chanceyliu/react-img-contrast/commit/229515357e768eda3c243155f8d93c44c565f053))
+
+
+
 # [2.0.0](https://github.com/chanceyliu/react-img-contrast/compare/b6b85c0c2229156fbe582eec9efc3e864c244ab9...v2.0.0) (2021-10-05)
 
 
