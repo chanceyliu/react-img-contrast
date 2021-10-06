@@ -1,5 +1,5 @@
+import { hexToRgb, getImgData } from '../utils'
 import { GetImgDataParams, GetImgDataRes } from '../interface'
-import { getImgData } from '../utils'
 
 /**
  * 生成rgb色值对应的YIQ值，并返回文字颜色
@@ -40,13 +40,24 @@ export const getAverageColor = (params: GetImgDataRes): number[] => {
 }
 
 /**
- * 获取文字最佳展示颜色
+ * 根据图片平均色值获取文字最佳展示颜色
  * @param params
  * @returns
  */
-export const getTextColor = async (params:GetImgDataParams):Promise<'white'|'black'> => {
+export const getImgContrast = async (params:GetImgDataParams):Promise<'white'|'black'> => {
   const imgData = await getImgData(params)
   const [r, g, b] = getAverageColor(imgData)
-  const textColor = getContrastYIQ(r, g, b)
-  return textColor
+  const contrast = getContrastYIQ(r, g, b)
+  return contrast
+}
+
+/**
+ * 根据十六进制颜色获取文字最佳展示颜色
+ * @param color
+ * @returns
+ */
+export const getColorContrast = (color:string):'white'|'black' => {
+  const [r, g, b] = hexToRgb(color)
+  const contrast = getContrastYIQ(r, g, b)
+  return contrast
 }
