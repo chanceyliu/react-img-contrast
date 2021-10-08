@@ -1,3 +1,16 @@
+## [2.1.2](https://github.com/chanceyliu/react-img-contrast/compare/v2.1.1...v2.1.2) (2021-10-08)
+
+
+### Bug Fixes
+
+* get-color-contrast 不是异步返回 ([3874dd0](https://github.com/chanceyliu/react-img-contrast/commit/3874dd092fe9b3ba85a6ae7ddfbf482a9b0bf9a5))
+
+
+
+## [2.1.1](https://github.com/chanceyliu/react-img-contrast/compare/v2.1.0...v2.1.1) (2021-10-06)
+
+
+
 # [2.1.0](https://github.com/chanceyliu/react-img-contrast/compare/v2.0.0...v2.1.0) (2021-10-06)
 
 
