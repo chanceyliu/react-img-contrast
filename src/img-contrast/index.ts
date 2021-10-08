@@ -56,7 +56,7 @@ export const getImgContrast = async (params:GetImgDataParams):Promise<'white'|'b
  * @param color
  * @returns
  */
-export const getColorContrast = (color:string):'white'|'black' => {
+export const getColorContrast = (color:string) => {
   const [r, g, b] = hexToRgb(color)
   const contrast = getContrastYIQ(r, g, b)
   return contrast
