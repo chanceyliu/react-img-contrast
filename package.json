@@ -1,6 +1,6 @@
 {
   "name": "react-img-contrast",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "根据图片平均色值生成文本最佳展示颜色",
   "main": "lib/index.js",
   "module": "es/index.js",
