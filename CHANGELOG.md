@@ -1,3 +1,12 @@
+# [2.2.0](https://github.com/chanceyliu/react-img-contrast/compare/v2.1.2...v2.2.0) (2022-03-02)
+
+
+### Bug Fixes
+
+* fix get average color ([f648096](https://github.com/chanceyliu/react-img-contrast/commit/f648096de986767acf60539225337635d529491e))
+
+
+
 ## [2.1.2](https://github.com/chanceyliu/react-img-contrast/compare/v2.1.1...v2.1.2) (2021-10-08)
 
 
