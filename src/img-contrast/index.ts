@@ -27,9 +27,9 @@ export const getAverageColor = (params: GetImgDataRes): number[] => {
 
   for (let i = 0, offset; i < canvasSize; i++) {
     offset = i * 4
-    r = data[offset + 0]
-    g = data[offset + 1]
-    b = data[offset + 2]
+    r += data[offset + 0]
+    g += data[offset + 1]
+    b += data[offset + 2]
   }
   // 求取平均值
   r = Math.round(r / canvasSize)
@@ -44,7 +44,9 @@ export const getAverageColor = (params: GetImgDataRes): number[] => {
  * @param params
  * @returns
  */
-export const getImgContrast = async (params:GetImgDataParams):Promise<'white'|'black'> => {
+export const getImgContrast = async (
+  params: GetImgDataParams
+): Promise<'white' | 'black'> => {
   const imgData = await getImgData(params)
   const [r, g, b] = getAverageColor(imgData)
   const contrast = getContrastYIQ(r, g, b)
@@ -56,7 +58,7 @@ export const getImgContrast = async (params:GetImgDataParams):Promise<'white'|'b
  * @param color
  * @returns
  */
-export const getColorContrast = (color:string) => {
+export const getColorContrast = (color: string) => {
   const [r, g, b] = hexToRgb(color)
   const contrast = getContrastYIQ(r, g, b)
   return contrast
